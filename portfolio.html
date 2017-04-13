@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jeffrey Hatch</title>
+	<!-- Setting the viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Stylesheet links -->
+	<link type="text/css" href="assets/css/reset.css" rel="stylesheet">
+	<link type="text/css" href="assets/css/style.css" rel="stylesheet">
+	<!-- Some jQuery for keeping the footer at the bottom -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).resize(function(){
+				var footerHeight = $('.footer').outerHeight();
+				var stickFooterPush = $('.push').height(footerHeight);
+			
+				$('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+			});		
+			$(window).resize();
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+
+	<!-- Header area at full width -->
+	<header class="header">
+		<div class="navigation">
+			<h1>Jeffrey Hatch</h1>
+			<ul class="nav">
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="index.html">About</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Content area -->
+	<div class="content">
+
+		<!-- This main area changes for the different pages -->
+		<main class="main">
+			<h2>Portfolio</h2>
+			<div class="main-block">
+			<div class="main-portfolio-block image-1"><br><br><br><br><br><br><h4><a href="#">Hangman</a></h4></div>
+			<div class="main-portfolio-block image-2"><br><br><br><br><br><br><h4><a href="#">RPG Game</a></h4></div>
+			<div class="main-portfolio-block image-3"><br><br><br><br><br><br><h4><a href="#">Trivia Game</a></h4></div>
+			<div class="main-portfolio-block image-4"><br><br><br><br><br><br><h4><a href="#">Rutgers Info Widget</a></h4></div>
+			<div class="main-portfolio-block image-5"><br><br><br><br><br><br><h4><a href="#">Rock Paper Scissors</a></h4></div>
+			</div>
+		</main>
+
+		<!-- Side area for socials // DOESN'T CHANGE -->
+		<div class="side">
+			<h3>Connect with Me</h3>
+			<ul class="connect">
+				<li><a href="https://github.com/jeffhatch" target="_blank"><img src="assets/images/icon-github.png" alt="github"></a></li>
+				<li><a href="http://www.linkedin.com/in/jeffreyhatch" target="_blank"><img src="assets/images/icon-linkedin.png" alt="linkedin"></a></li>
+				<li><a href="https://stackoverflow.com/users/story/7776732" target="_blank"><img src="assets/images/icon-stackoverflow.png" alt="stackoverflow"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- DIV to push the footer -->
+	<div class="push"></div>
+	
+</div> <!-- /wrapper  -->
+	
+<footer class="footer">
+	<p>&copy; Copyright 2017 Jeffrey Hatch</p>
+</footer>
+
+	
+</body>
+</html>
